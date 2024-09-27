@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴宇涵的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            padding: 20px 0;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        header:hover {
+            background-color: #444;
+            transform: rotate(2deg);
+        }
+        h1 {
+            color: #fff; /* 标题颜色改为白色 */
+            font-size: 3em; /* 字体增大 */
+            font-weight: bold; /* 加粗 */
+            transition: transform 0.3s, color 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.1) rotate(-5deg);
+            color: #FFD700; /* 悬停时改变颜色为金色 */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px; /* 增加内边距 */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.5s forwards;
+            animation-delay: 0.3s;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .about-me {
+            margin-bottom: 30px; /* 增加底部间距 */
+        }
+        .contact-info {
+            margin-top: 20px;
+            transition: color 0.3s;
+        }
+        .contact-info:hover {
+            color: #007BFF;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>吴宇涵的个人主页</h1>
+</header>
+
+<div class="container">
+    <h2 class="about-me">关于我</h2>
+    <p>你好！我是吴宇涵，我是一名热爱学习的学生</p>
+    <p>我目前正在学习计算机科学，特别感兴趣的是前端开发和用户体验设计。我希望能掌握HTML、CSS和JavaScript等技术，并且在实际项目中应用所学的知识。</p>
+    <p>除了学业，我也积极参与学校的科技活动，与同学们一起讨论学习经验，分享编程技巧。</p>
+    <p>我相信不断学习和实践能够帮助我成长，未来我希望能在互联网行业找到一份理想的工作，创造出对用户有意义的产品。</p>
+
+    <div class="contact-info">
+        <h3>联系信息</h3>
+        <p>手机号: 138-XXXX-XXXX</p>
+        <p>微信号: wuyuhan_weixin</p>
+    </div>
+</div>
+
+</body>
+</html>
+
